@@ -13,6 +13,9 @@ Helper functions
 ----------------
 
 $	currency format $x,xxx.xx
+
 ,	numeric format x,xxx.xx
+
 UC	upper case
+
 LC	lower case
