@@ -1,0 +1,19 @@
+{
+    "name": "fko2221/mymustache",
+    "description": "An enhancement to the PHP Mustache class",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kent Oyer",
+            "email": "kent.oyer@gmail.com"
+        }
+    ],
+    "require": {
+        "mustache/mustache": "~2.5"
+    },
+    "autoload": {
+        "classmap": [
+            "mymustache.php"
+        ]
+    }
+}
