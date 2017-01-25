@@ -5,13 +5,13 @@
 class MyMustache extends Mustache_Engine
 {
 
-	function __construct($path="") {
+	function __construct($path="",$extension='.htm') {
 	
 		if ( ! $path ) {
 			$path = dirname($_SERVER['SCRIPT_FILENAME']);
 		}
 		
-		$options =  array('extension' => '.htm');
+		$options =  array('extension' => $extension);
 		parent::__construct(array(
 			'loader' => new Mustache_Loader_FilesystemLoader($path, $options),
 			'pragmas' => array(Mustache_Engine::PRAGMA_FILTERS)
