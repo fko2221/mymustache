@@ -25,6 +25,7 @@ class MyMustache extends Mustache_Engine
 		parent::addHelper('MDY',function($value) { return strtotime((string)$value)? @date('m/d/Y',strtotime((string)$value)) : ''; });
 		parent::addHelper('NL2BR',function($value) { return @nl2br((string)$value); });
 		parent::addHelper('JSON',function($value) { return @json_encode($value); });
+		parent::addHelper('QQ',function($value) { return @str_replace('"','""',$value); });
 		
 	}
 
